@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  TwitterViewController.h
 //  test
 //
 //  Created by Dennis Burdin on 30.01.17.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface TwitterViewController : UIViewController
 
 @end
-

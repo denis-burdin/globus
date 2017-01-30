@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="UtR-8U-e8G">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Fu3-lS-5pY">
+            <objects>
+                <navigationController storyboardIdentifier="firstNavigation" id="UtR-8U-e8G" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="VoZ-3I-cPk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="KCH-e8-fiL" kind="relationship" relationship="rootViewController" id="vGX-mc-fFv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="viG-bg-jS5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-279" y="-53"/>
+        </scene>
+        <!--Initial View Controller-->
+        <scene sceneID="Bjw-fT-t3n">
+            <objects>
+                <viewController id="KCH-e8-fiL" customClass="InitialViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9x8-0c-eN0"/>
+                        <viewControllerLayoutGuide type="bottom" id="DPq-7M-aGc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HyP-lg-38v">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AV0-OQ-mUe">
+                                <rect key="frame" x="128" y="286.5" width="118" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="118" id="3hT-FI-CGh"/>
+                                </constraints>
+                                <state key="normal" title="Показать твиты"/>
+                                <connections>
+                                    <segue destination="0q2-5n-hzB" kind="show" id="wPf-Zt-dqZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="AV0-OQ-mUe" firstAttribute="centerX" secondItem="HyP-lg-38v" secondAttribute="centerX" id="33o-HC-f1S"/>
+                            <constraint firstItem="AV0-OQ-mUe" firstAttribute="centerY" secondItem="HyP-lg-38v" secondAttribute="centerY" id="3zB-N6-LoA"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="44X-jR-IV1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FHk-Qe-uDn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="436" y="-54.422788605697157"/>
+        </scene>
+        <!--Twitter View Controller-->
+        <scene sceneID="9FW-AI-gbM">
+            <objects>
+                <viewController id="0q2-5n-hzB" customClass="TwitterViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MK1-fl-ePV"/>
+                        <viewControllerLayoutGuide type="bottom" id="QLa-P1-D0D"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="G4q-E3-rqH">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sfh-c4-vS2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1119" y="-54"/>
+        </scene>
+    </scenes>
+</document>

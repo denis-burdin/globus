@@ -10,13 +10,15 @@
 		1CBDEE826FC0FA0BE8095724 /* libPods-test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FACD5B660CF3D39812F28580 /* libPods-test.a */; };
 		A255AB151E3F5140007906B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A255AB141E3F5140007906B8 /* main.m */; };
 		A255AB181E3F5140007906B8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A255AB171E3F5140007906B8 /* AppDelegate.m */; };
-		A255AB1B1E3F5140007906B8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A255AB1A1E3F5140007906B8 /* ViewController.m */; };
+		A255AB1B1E3F5140007906B8 /* InitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A255AB1A1E3F5140007906B8 /* InitialViewController.m */; };
 		A255AB1E1E3F5140007906B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A255AB1C1E3F5140007906B8 /* Main.storyboard */; };
 		A255AB211E3F5140007906B8 /* test.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A255AB1F1E3F5140007906B8 /* test.xcdatamodeld */; };
 		A255AB231E3F5140007906B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A255AB221E3F5140007906B8 /* Assets.xcassets */; };
-		A255AB261E3F5140007906B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A255AB241E3F5140007906B8 /* LaunchScreen.storyboard */; };
 		A255AB311E3F5140007906B8 /* testTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A255AB301E3F5140007906B8 /* testTests.m */; };
 		A255AB3C1E3F5140007906B8 /* testUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A255AB3B1E3F5140007906B8 /* testUITests.m */; };
+		A2C289491E3F5B330089554D /* UIStoryboard+Instant.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C289481E3F5B330089554D /* UIStoryboard+Instant.m */; };
+		A2C2894B1E3F5C970089554D /* InitialScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2C2894A1E3F5C970089554D /* InitialScreen.storyboard */; };
+		A2C2894E1E3F6A460089554D /* TwitterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C2894D1E3F6A460089554D /* TwitterViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,12 +44,11 @@
 		A255AB141E3F5140007906B8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A255AB161E3F5140007906B8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A255AB171E3F5140007906B8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A255AB191E3F5140007906B8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A255AB1A1E3F5140007906B8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A255AB191E3F5140007906B8 /* InitialViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InitialViewController.h; sourceTree = "<group>"; };
+		A255AB1A1E3F5140007906B8 /* InitialViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InitialViewController.m; sourceTree = "<group>"; };
 		A255AB1D1E3F5140007906B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A255AB201E3F5140007906B8 /* test.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = test.xcdatamodel; sourceTree = "<group>"; };
 		A255AB221E3F5140007906B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A255AB251E3F5140007906B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A255AB271E3F5140007906B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A255AB2C1E3F5140007906B8 /* testTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A255AB301E3F5140007906B8 /* testTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testTests.m; sourceTree = "<group>"; };
@@ -56,6 +57,11 @@
 		A255AB3B1E3F5140007906B8 /* testUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testUITests.m; sourceTree = "<group>"; };
 		A255AB3D1E3F5140007906B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A255AB491E3F537B007906B8 /* test-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "test-Prefix.pch"; sourceTree = "<group>"; };
+		A2C289471E3F5B330089554D /* UIStoryboard+Instant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIStoryboard+Instant.h"; sourceTree = "<group>"; };
+		A2C289481E3F5B330089554D /* UIStoryboard+Instant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIStoryboard+Instant.m"; sourceTree = "<group>"; };
+		A2C2894A1E3F5C970089554D /* InitialScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = InitialScreen.storyboard; sourceTree = "<group>"; };
+		A2C2894C1E3F6A460089554D /* TwitterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterViewController.h; sourceTree = "<group>"; };
+		A2C2894D1E3F6A460089554D /* TwitterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterViewController.m; sourceTree = "<group>"; };
 		B61091CACA73283348AA0530 /* Pods-test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-test/Pods-test.debug.xcconfig"; sourceTree = "<group>"; };
 		FACD5B660CF3D39812F28580 /* libPods-test.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-test.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -119,14 +125,6 @@
 		A255AB121E3F5140007906B8 /* test */ = {
 			isa = PBXGroup;
 			children = (
-				A255AB161E3F5140007906B8 /* AppDelegate.h */,
-				A255AB171E3F5140007906B8 /* AppDelegate.m */,
-				A255AB191E3F5140007906B8 /* ViewController.h */,
-				A255AB1A1E3F5140007906B8 /* ViewController.m */,
-				A255AB221E3F5140007906B8 /* Assets.xcassets */,
-				A255AB241E3F5140007906B8 /* LaunchScreen.storyboard */,
-				A255AB271E3F5140007906B8 /* Info.plist */,
-				A255AB1F1E3F5140007906B8 /* test.xcdatamodeld */,
 				A255AB4E1E3F5419007906B8 /* Model */,
 				A255AB4D1E3F5408007906B8 /* Views */,
 				A255AB4C1E3F53FE007906B8 /* Controllers */,
@@ -140,6 +138,9 @@
 		A255AB131E3F5140007906B8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A255AB271E3F5140007906B8 /* Info.plist */,
+				A255AB161E3F5140007906B8 /* AppDelegate.h */,
+				A255AB171E3F5140007906B8 /* AppDelegate.m */,
 				A255AB1C1E3F5140007906B8 /* Main.storyboard */,
 				A255AB141E3F5140007906B8 /* main.m */,
 				A255AB491E3F537B007906B8 /* test-Prefix.pch */,
@@ -168,6 +169,8 @@
 		A255AB4A1E3F53CA007906B8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A255AB221E3F5140007906B8 /* Assets.xcassets */,
+				A2C2894A1E3F5C970089554D /* InitialScreen.storyboard */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -175,6 +178,8 @@
 		A255AB4B1E3F53ED007906B8 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				A2C289471E3F5B330089554D /* UIStoryboard+Instant.h */,
+				A2C289481E3F5B330089554D /* UIStoryboard+Instant.m */,
 			);
 			name = Core;
 			sourceTree = "<group>";
@@ -182,6 +187,10 @@
 		A255AB4C1E3F53FE007906B8 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				A255AB191E3F5140007906B8 /* InitialViewController.h */,
+				A255AB1A1E3F5140007906B8 /* InitialViewController.m */,
+				A2C2894C1E3F6A460089554D /* TwitterViewController.h */,
+				A2C2894D1E3F6A460089554D /* TwitterViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -196,6 +205,7 @@
 		A255AB4E1E3F5419007906B8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A255AB1F1E3F5140007906B8 /* test.xcdatamodeld */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -321,7 +331,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A255AB261E3F5140007906B8 /* LaunchScreen.storyboard in Resources */,
+				A2C2894B1E3F5C970089554D /* InitialScreen.storyboard in Resources */,
 				A255AB231E3F5140007906B8 /* Assets.xcassets in Resources */,
 				A255AB1E1E3F5140007906B8 /* Main.storyboard in Resources */,
 			);
@@ -396,10 +406,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A255AB1B1E3F5140007906B8 /* ViewController.m in Sources */,
+				A255AB1B1E3F5140007906B8 /* InitialViewController.m in Sources */,
 				A255AB211E3F5140007906B8 /* test.xcdatamodeld in Sources */,
 				A255AB181E3F5140007906B8 /* AppDelegate.m in Sources */,
 				A255AB151E3F5140007906B8 /* main.m in Sources */,
+				A2C2894E1E3F6A460089554D /* TwitterViewController.m in Sources */,
+				A2C289491E3F5B330089554D /* UIStoryboard+Instant.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,14 +453,6 @@
 				A255AB1D1E3F5140007906B8 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		A255AB241E3F5140007906B8 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A255AB251E3F5140007906B8 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -494,7 +498,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -535,7 +539,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -547,10 +551,12 @@
 			baseConfigurationReference = B61091CACA73283348AA0530 /* Pods-test.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 9U3WVKD9E4;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "test/test-Prefix.pch";
 				INFOPLIST_FILE = test/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.globus.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -562,10 +568,12 @@
 			baseConfigurationReference = 42DAE825B4D601A9A5D6291F /* Pods-test.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 9U3WVKD9E4;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "test/test-Prefix.pch";
 				INFOPLIST_FILE = test/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.globus.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";

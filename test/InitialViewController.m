@@ -1,22 +1,23 @@
 //
-//  ViewController.m
+//  InitialViewController.m
 //  test
 //
 //  Created by Dennis Burdin on 30.01.17.
 //  Copyright © 2017 Dennis Burdin. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "InitialViewController.h"
 
-@interface ViewController ()
+@interface InitialViewController ()
 
 @end
 
-@implementation ViewController
+@implementation InitialViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    [self configurateUI];
 }
 
 
@@ -25,5 +26,10 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)configurateUI {
+    [self setNeedsStatusBarAppearanceUpdate];
+    [self.navigationController.navigationBar setHidden:YES];
+    [self.navigationItem setHidesBackButton:YES animated:NO];
+}
 
 @end
