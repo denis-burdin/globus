@@ -7,6 +7,7 @@
 //
 
 #import "InitialViewController.h"
+#import "TwitterEngine.h"
 
 @interface InitialViewController ()
 
@@ -30,6 +31,10 @@
     [self setNeedsStatusBarAppearanceUpdate];
     [self.navigationController.navigationBar setHidden:YES];
     [self.navigationItem setHidesBackButton:YES animated:NO];
+}
+
+- (IBAction)pushLoginButton:(id)sender {
+    [[TwitterEngine sharedInstance] login];
 }
 
 @end

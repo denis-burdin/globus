@@ -7,6 +7,7 @@
 //
 
 #import "TwitterViewController.h"
+#import "TwitterEngine.h"
 
 static NSString *const kTwitter = @"Twitter";
 
@@ -19,6 +20,7 @@ static NSString *const kTwitter = @"Twitter";
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [[TwitterEngine sharedInstance] getTimelineAction];
 }
 
 - (void)viewWillAppear:(BOOL)animated {

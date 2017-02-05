@@ -16,6 +16,7 @@
 		A255AB231E3F5140007906B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A255AB221E3F5140007906B8 /* Assets.xcassets */; };
 		A255AB311E3F5140007906B8 /* testTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A255AB301E3F5140007906B8 /* testTests.m */; };
 		A255AB3C1E3F5140007906B8 /* testUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A255AB3B1E3F5140007906B8 /* testUITests.m */; };
+		A2A535421E3FD32400F11138 /* TwitterEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A535411E3FD32400F11138 /* TwitterEngine.m */; };
 		A2C289491E3F5B330089554D /* UIStoryboard+Instant.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C289481E3F5B330089554D /* UIStoryboard+Instant.m */; };
 		A2C2894B1E3F5C970089554D /* InitialScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2C2894A1E3F5C970089554D /* InitialScreen.storyboard */; };
 		A2C2894E1E3F6A460089554D /* TwitterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C2894D1E3F6A460089554D /* TwitterViewController.m */; };
@@ -57,6 +58,8 @@
 		A255AB3B1E3F5140007906B8 /* testUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testUITests.m; sourceTree = "<group>"; };
 		A255AB3D1E3F5140007906B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A255AB491E3F537B007906B8 /* test-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "test-Prefix.pch"; sourceTree = "<group>"; };
+		A2A535401E3FD32400F11138 /* TwitterEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterEngine.h; sourceTree = "<group>"; };
+		A2A535411E3FD32400F11138 /* TwitterEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterEngine.m; sourceTree = "<group>"; };
 		A2C289471E3F5B330089554D /* UIStoryboard+Instant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIStoryboard+Instant.h"; sourceTree = "<group>"; };
 		A2C289481E3F5B330089554D /* UIStoryboard+Instant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIStoryboard+Instant.m"; sourceTree = "<group>"; };
 		A2C2894A1E3F5C970089554D /* InitialScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = InitialScreen.storyboard; sourceTree = "<group>"; };
@@ -180,6 +183,8 @@
 			children = (
 				A2C289471E3F5B330089554D /* UIStoryboard+Instant.h */,
 				A2C289481E3F5B330089554D /* UIStoryboard+Instant.m */,
+				A2A535401E3FD32400F11138 /* TwitterEngine.h */,
+				A2A535411E3FD32400F11138 /* TwitterEngine.m */,
 			);
 			name = Core;
 			sourceTree = "<group>";
@@ -407,6 +412,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A255AB1B1E3F5140007906B8 /* InitialViewController.m in Sources */,
+				A2A535421E3FD32400F11138 /* TwitterEngine.m in Sources */,
 				A255AB211E3F5140007906B8 /* test.xcdatamodeld in Sources */,
 				A255AB181E3F5140007906B8 /* AppDelegate.m in Sources */,
 				A255AB151E3F5140007906B8 /* main.m in Sources */,

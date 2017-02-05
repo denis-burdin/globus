@@ -4,4 +4,5 @@ target "test" do
     pod 'AFNetworking', '~> 3.0'
     pod 'MagicalRecord'
     pod 'SVPullToRefresh'
+    pod 'STTwitter'
 end
