@@ -9,10 +9,16 @@
 #import <Foundation/Foundation.h>
 #import <STTwitter.h>
 
+typedef void (^accountCompletionBlock_t)(NSString* __nullable username, NSString* __nullable userID);
+
 @interface TwitterEngine : NSObject <STTwitterAPIOSProtocol>
 
-+ (TwitterEngine *)sharedInstance;
-- (void)login;
-- (void)getTimelineAction;
+@property (nonatomic, strong) NSString* __nullable userID;
+@property (nonatomic, strong) NSString* __nullable userName;
+@property (nonatomic, strong) NSArray* __nullable tweets;
+
++ (nonnull TwitterEngine *)sharedInstance;
+- (void)getTimelineAction:(nullable void (^)(NSArray* __nullable tweets))callback;
+- (void)login:(nullable accountCompletionBlock_t)completion;
 
 @end

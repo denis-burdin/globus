@@ -14,11 +14,10 @@
 #import <STHTTPRequest.h>
 
 typedef void (^accountChooserBlock_t)(ACAccount *account, NSString *errorMessage); // don't bother with NSError for that
-typedef void (^accountCompletionBlock_t)(NSString *username, NSString *userID);
 
 @interface TwitterEngine()
 {
-    accountCompletionBlock_t _accountCompletionBlock;
+    NSUInteger _currentID;
 }
 
 @property (nonatomic, strong) STTwitterAPI *twitter;
@@ -46,33 +45,38 @@ typedef void (^accountCompletionBlock_t)(NSString *username, NSString *userID);
     
     if (self) {
         self.accountStore = [ACAccountStore new];
+        _currentID = 1;
     }
     
     return self;
 }
 
-- (void)login:(void (^)())completion {
+- (void)login:(accountCompletionBlock_t)completion {
     
     __weak typeof(self) weakSelf = self;
     self.accountChooserBlock = ^(ACAccount *account, NSString *errorMessage) {
         if(account) {
-            [weakSelf loginWithiOSAccount:account completion:^{
-                completion();
+            [weakSelf loginWithiOSAccount:account completion:^(NSString *username, NSString *userID) {
+                weakSelf.userID = userID;
+                weakSelf.userName = username;
+                completion(username, userID);
             }];
+        } else {
+            completion(nil, nil);
         }
     };
-    [self chooseAccount];
+
+    [weakSelf chooseAccount];
 }
 
-- (void)loginWithiOSAccount:(ACAccount *)account completion:accountCompletionBlock_t {
+- (void)loginWithiOSAccount:(ACAccount *)account completion:(accountCompletionBlock_t)handler {
     
     self.twitter = nil;
     self.twitter = [STTwitterAPI twitterAPIOSWithAccount:account delegate:self];
     
     [_twitter verifyCredentialsWithUserSuccessBlock:^(NSString *username, NSString *userID) {
         // store it ?
-        NSLog(@"username is %@; userID is %@", username, userID);
-        _accountCompletionBlock(username, userID);
+        handler(username, userID);
     } errorBlock:^(NSError *error) {
         // TODO: handle error
     }];
@@ -111,15 +115,18 @@ typedef void (^accountCompletionBlock_t)(NSString *username, NSString *userID);
 #endif
 }
 
-- (void)getTimelineAction {
-    
-    [_twitter getHomeTimelineSinceID:nil
+- (void)getTimelineAction:(nullable void (^)(NSArray* __nullable tweets))callback {
+    __weak typeof(self) weakSelf = self;
+    [_twitter getHomeTimelineSinceID:[@(_currentID) description]
                                count:20
                         successBlock:^(NSArray *statuses) {
-                            
-                            NSLog(@"-- statuses: %@", statuses);
+                            weakSelf.tweets = statuses;
+                            _currentID += 20;
+                            callback(statuses);
                         } errorBlock:^(NSError *error) {
                             // TODO: handle error
+                            NSLog(@"%@", error.description);
+                            callback(nil);
                         }];
 }
 

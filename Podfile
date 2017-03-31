@@ -5,4 +5,5 @@ target "test" do
     pod 'MagicalRecord'
     pod 'SVPullToRefresh'
     pod 'STTwitter'
+    pod 'UIScrollView-InfiniteScroll'
 end

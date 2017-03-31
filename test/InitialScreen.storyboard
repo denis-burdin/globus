@@ -47,8 +47,29 @@
                                     <segue destination="0q2-5n-hzB" kind="show" id="wPf-Zt-dqZ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n89-Af-ZYJ">
-                                <rect key="frame" x="165" y="190" width="44" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Вы успешно залогинились" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cYO-0b-jvQ">
+                                <rect key="frame" x="68" y="90" width="238" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="userID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jex-fp-rVg">
+                                <rect key="frame" x="68" y="129" width="208" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="userName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sdy-Mu-s8u">
+                                <rect key="frame" x="68" y="165" width="208" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n89-Af-ZYJ">
+                                <rect key="frame" x="165" y="221" width="44" height="30"/>
                                 <state key="normal" title="Логин"/>
                                 <connections>
                                     <action selector="pushLoginButton:" destination="KCH-e8-fiL" eventType="touchUpInside" id="yqc-Yf-jiV"/>
@@ -64,6 +85,13 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="44X-jR-IV1"/>
+                    <connections>
+                        <outlet property="lblLoginStatus" destination="cYO-0b-jvQ" id="HiQ-zc-cjO"/>
+                        <outlet property="lblUserID" destination="Jex-fp-rVg" id="BUk-Vq-jS4"/>
+                        <outlet property="lblUserName" destination="sdy-Mu-s8u" id="gEg-xH-Uy9"/>
+                        <outlet property="loginButton" destination="n89-Af-ZYJ" id="7gp-uC-84H"/>
+                        <outlet property="showTweetsButton" destination="AV0-OQ-mUe" id="QGd-aF-77E"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FHk-Qe-uDn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -80,12 +108,22 @@
                     <view key="view" contentMode="scaleToFill" id="G4q-E3-rqH">
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="j9k-3f-j8Q">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="j9k-3f-j8Q" id="HVy-LT-nbE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sfh-c4-vS2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1119" y="-54"/>
+            <point key="canvasLocation" x="1117.5999999999999" y="-54.422788605697157"/>
         </scene>
     </scenes>
 </document>

@@ -10,6 +10,11 @@
 
 @interface InitialViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIButton *loginButton;
+@property (weak, nonatomic) IBOutlet UIButton *showTweetsButton;
+@property (weak, nonatomic) IBOutlet UILabel *lblLoginStatus;
+@property (weak, nonatomic) IBOutlet UILabel *lblUserID;
+@property (weak, nonatomic) IBOutlet UILabel *lblUserName;
 
 @end
 

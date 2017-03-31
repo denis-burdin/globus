@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TwitterViewController : UIViewController
+@interface TwitterViewController : UIViewController<UITableViewDelegate, UITableViewDataSource, UIScrollViewDelegate>
+
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end
